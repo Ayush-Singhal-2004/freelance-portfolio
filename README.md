@@ -6,7 +6,7 @@
 3. Find the issue 
 
 4. Create new branch </br>
-&emsp;git checkout -b <branch-name>
+&emsp;git checkout -b "branch-name"
 
 5. Make Changes to the code
 
