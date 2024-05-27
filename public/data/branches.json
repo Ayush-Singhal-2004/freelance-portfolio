@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "name": "jaipur",
+            "address": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "delhi",
+            "address": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "banglore",
+            "address": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "name": "pune",
+            "address": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+    ]
+}
