@@ -45,6 +45,8 @@ nav {
     }
 }
 
+
+//Home page
 .home {
 
     .home-content {
@@ -73,6 +75,7 @@ nav {
     }
 }
 
+
 footer {
     background-color: #175888;
     padding: 3vh 0;
@@ -88,6 +91,73 @@ footer {
         }
     }
 }
+
+
+//Contact Us page
+.m-branch
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  display: grid;
+  gap: 0 5vw ;
+  grid-template-columns: auto auto;  
+}
+
+#branch
+{
+    text-align: center;
+    color: #175888;
+}
+
+h3
+{
+    color: #175888;
+}
+
+.sec1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+.map
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+   box-shadow: 3px 3px 10px rgb(167,167,167); 
+   display : flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2vh;
+   width: 25vw;
+   margin-bottom: 5vh;
+   padding: 2vh;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vh;
+    
+}
+
+button
+{
+    background-color: #175888;
+    color: white;
+    padding: 1vh;
+    cursor: pointer;
+}
+ 
 
 @media screen and (max-width: 480px) {
     nav {
