@@ -1,49 +1,47 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import logo from '../assets/images/ca-logo.png'
+import '../App.scss'
+import { useState } from 'react'
+
+function ServicesOptions() {
+    return (
+        <div className='services-options'>
+            <a href="#">Income Tax</a>
+            <a href="#">GST</a>
+            <a href="#">Corporate Services</a>
+            <a href="#">Audit</a>
+            <a href="#">Coporate Finance</a>
+            <a href="#">Services for Non-Residents</a>
+            <a href="#">Accounting Services</a>
+            <a href="#">Payroll</a>
+            <a href="#">Benefits of Outsourcing</a>
+            <a href="#">TDS</a>
+            <a href="#">Coporate Governance</a>
+        </div>
+    )
+}
 
 function NavigationBar({selected}) {
 
-    const selectedStyle = { "color": "#f0f0f0" }
+    const [isServices, setIsServices] = useState(false);
 
     return (
-        <Navbar bg="primary" data-bs-theme="dark">
-            <Container>
-                {/* <Navbar.Brand href="#">Eduford</Navbar.Brand> */}
-                <Nav className="me-auto">
-                    <Nav.Link href="/"
-                    style={selected=="home"?selectedStyle:{}}
-                    >
-                        Home
-                    </Nav.Link>
-                    <Nav.Link href="/services"
-                    style={selected=="services"?selectedStyle:{}}
-                    >
-                        Services
-                    </Nav.Link>
-                    <Nav.Link href="/team"
-                    style={selected=="team"?selectedStyle:{}}
-                    >
-                        Team
-                    </Nav.Link>
-                    <Nav.Link href="/blogs"
-                    style={selected=="blogs"?selectedStyle:{}}
-                    >
-                        Blogs
-                    </Nav.Link>
-                    <Nav.Link href="/about"
-                    style={selected=="about"?selectedStyle:{}}
-                    >
-                        About us
-                    </Nav.Link>
-                    <Nav.Link href="/contact"
-                    style={selected=="contact"?selectedStyle:{}}
-                    >
-                        Contact us
-                    </Nav.Link>
-                </Nav>
-            </Container>
-      </Navbar>
+        <nav>
+            <img src={logo} alt="" />
+            <div className='nav-links'>
+                <a href="/">Home</a>
+                <a href="#" onClick={() => setIsServices(!isServices)}>
+                    Services
+                    {
+                        isServices ? <ServicesOptions /> : <></>
+                    }
+                </a>
+                <a href="/team">Team</a>
+                <a href="/blogs">Blogs</a>
+                <a href="about">About us</a>
+                <a href="contact">Contact us</a>
+            </div>
+            
+        </nav>
     )
 }
 

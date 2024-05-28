@@ -1,0 +1,46 @@
+nav {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+    padding: 0 3vw;
+    padding-top: 1vh;
+    position: relative;
+    
+    img {
+        height: 100%;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 2.5vw;
+
+        a {
+            text-decoration: none;
+            color: #175888;
+            font-size: large;
+        }
+    }
+
+    .services-options {
+        background-color: rgb(247, 247, 247);
+        position: absolute;
+        width: 18%;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        border: 1px solid black;
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            padding-left: 10px;
+
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+}
