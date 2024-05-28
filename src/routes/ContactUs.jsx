@@ -1,6 +1,11 @@
+import NavigationBar from "../components/NavigationBar"
+
 function ContactUs() {
     return (
-        <h1>ContactUs</h1>
+        <div>
+            <NavigationBar selected={"contact"} />
+            <h1>ContactUs</h1>
+        </div>
     )
 }
 

@@ -1,6 +1,11 @@
+import NavigationBar from "../components/NavigationBar"
+
 function Blogs() {
     return (
-        <h1>Blogs</h1>
+        <div>
+            <NavigationBar selected={"blogs"} />
+            <h1>Blogs</h1>
+        </div>
     )
 }
 

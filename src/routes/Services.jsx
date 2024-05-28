@@ -1,6 +1,11 @@
+import NavigationBar from "../components/NavigationBar"
+
 function Services() {
     return (
-        <h1>Services</h1>
+        <div>
+            <NavigationBar selected={"services"} />
+            <h1>Services</h1>
+        </div>
     )
 }
 

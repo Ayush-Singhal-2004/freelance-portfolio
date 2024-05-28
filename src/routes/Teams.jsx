@@ -1,6 +1,11 @@
+import NavigationBar from "../components/NavigationBar"
+
 function Teams() {
     return (
-        <h1>Teams</h1>
+        <div>
+            <NavigationBar selected={"team"} />
+            <h1>Teams</h1>
+        </div>
     )
 }
 

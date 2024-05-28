@@ -5,6 +5,7 @@ import Blogs from "./routes/Blogs"
 import ContactUs from "./routes/ContactUs"
 import Services from "./routes/Services"
 import Teams from "./routes/Teams"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
@@ -12,9 +13,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route  path="/team" element={<Teams />} />
-                <Route path="/aboutus" element={<AboutUs />} />
+                <Route path="/about" element={<AboutUs />} />
                 <Route path="/blogs" element={<Blogs />} />
-                <Route path="/contactus" element={<ContactUs />} />
+                <Route path="/contact" element={<ContactUs />} />
                 <Route path="/services" element={<Services />} />
             </Routes>
         </BrowserRouter>
