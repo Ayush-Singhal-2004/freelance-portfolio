@@ -6,7 +6,9 @@ nav {
     gap: 2vw;
     padding: 0 3vw;
     padding-top: 1vh;
+    padding-bottom: 1vh;
     position: relative;
+    box-shadow: 3px 3px 10px rgb(167, 167, 167);
     
     img {
         height: 100%;
@@ -29,17 +31,97 @@ nav {
         width: 18%;
         display: flex;
         flex-direction: column;
-        gap: 4px;
         border: 1px solid black;
 
-        a {
-            text-decoration: none;
+        p {
             color: black;
-            padding: 5px;
-            padding-left: 10px;
+            margin: 0;
+            padding: 6px;
 
             &:hover{
                 background-color: white;
+            }
+        }
+    }
+}
+
+.home {
+
+    .home-content {
+        margin-top: 5vh;
+        padding: 0 2vw;
+
+        li {
+            margin-bottom: 2vh;
+        }
+
+        p {
+            line-height: 1.8vw;
+        }
+
+        img {
+            height: 20vh;
+            border-radius: 5px;
+        }
+    }
+
+    .home-heading {
+        color: #175888;
+        font-size: x-large;
+        padding-bottom: 1vh;
+        border-bottom: 1px solid #c5c5c5;
+    }
+}
+
+footer {
+    background-color: #175888;
+    padding: 3vh 0;
+    padding-left: 2vw;
+    margin-top: 6vh;
+
+    .footer-content {
+        display: flex;
+        gap: 1.5vw;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+
+        img {
+            height: 60%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5vw;
+    
+            p {
+                color: #175888;
+                font-size: small;
+            }
+        }
+
+        .services-options {
+            background-color: rgb(247, 247, 247);
+            position: absolute;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+    
+            p {
+                color: black;
+                margin: 0;
+                padding: 6px;
+    
+                &:hover{
+                    background-color: white;
+                }
             }
         }
     }

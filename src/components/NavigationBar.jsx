@@ -5,17 +5,17 @@ import { useState } from 'react'
 function ServicesOptions() {
     return (
         <div className='services-options'>
-            <a href="#">Income Tax</a>
-            <a href="#">GST</a>
-            <a href="#">Corporate Services</a>
-            <a href="#">Audit</a>
-            <a href="#">Coporate Finance</a>
-            <a href="#">Services for Non-Residents</a>
-            <a href="#">Accounting Services</a>
-            <a href="#">Payroll</a>
-            <a href="#">Benefits of Outsourcing</a>
-            <a href="#">TDS</a>
-            <a href="#">Coporate Governance</a>
+            <p>Income Tax</p>
+            <p>GST</p>
+            <p>Corporate Services</p>
+            <p>Audit</p>
+            <p>Coporate Finance</p>
+            <p>Services for Non-Residents</p>
+            <p>Accounting Services</p>
+            <p>Payroll</p>
+            <p>Benefits of Outsourcing</p>
+            <p>TDS</p>
+            <p>Coporate Governance</p>
         </div>
     )
 }
