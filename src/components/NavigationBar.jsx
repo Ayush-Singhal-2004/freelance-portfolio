@@ -9,7 +9,7 @@ function NavigationBar({selected}) {
     return (
         <Navbar bg="primary" data-bs-theme="dark">
             <Container>
-                <Navbar.Brand href="#">Navbar</Navbar.Brand>
+                {/* <Navbar.Brand href="#">Eduford</Navbar.Brand> */}
                 <Nav className="me-auto">
                     <Nav.Link href="/"
                     style={selected=="home"?selectedStyle:{}}
