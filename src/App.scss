@@ -2,8 +2,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 nav {
     height: 10vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,6 +51,14 @@ nav {
                 background-color: white;
             }
         }
+    }
+
+    .list-icon{
+        display: none;
+    }
+
+    .nav-dropdown{
+        display: none;
     }
 }
 
@@ -106,12 +119,14 @@ footer {
   display: grid;
   gap: 0 5vw ;
   grid-template-columns: auto auto;  
+  padding: 5vh 0;
 }
 
 #branch
 {
     text-align: center;
     color: #175888;
+    margin: 5vh 0;
 }
 
 h3
@@ -159,6 +174,10 @@ form
         resize: none;
         padding: 1vh 1vw;
     }
+    button{
+        padding: 1vh 2vh;
+        border-radius: 5px;
+    }
 }
 
 button
@@ -177,20 +196,74 @@ button
     h1{
         color: #175888;
         text-align: center;
+        margin: 5vh 0;
     }
 
     p{
         line-height: 2vw;
         margin-bottom: 2vw;
         padding: 0 5vw;
-        text-align: center;
+    }
+}
+
+
+//Teams page
+
+.teams{
+    h1{
+        margin: 5vh 0;
+    }
+    .m-teams{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 12vw;
+        gap: 3vw;
+    }
+}
+
+.teams-heading{
+    color: #175888;
+}
+
+.blog-card{
+    height: 35vw;
+    max-width: 27vw;
+    box-shadow: -3px 3px 10px rgb(167, 167, 167);
+    padding: 0 3vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    border-radius: 5px;
+
+    h1{
+        color: #175888;
+        font-size: x-large;
+    }
+}
+
+
+//Blogs page
+
+.blogs{
+    .blogs-content{
+        margin-top: 10vh;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 2.5vw;
     }
 }
  
 
-@media screen and (max-width: 480px) {
-    nav {
 
+
+@media screen and (max-width: 580px) {
+    nav {
+        padding: 0 5vw;
+        
         img {
             height: 60%;
         }
@@ -203,6 +276,7 @@ button
                 color: #175888;
                 font-size: small;
             }
+            display: none;
         }
 
         .services-options {
@@ -223,5 +297,160 @@ button
                 }
             }
         }
+
+        .list-icon{
+            display: block;
+        }
+
+        .nav-dropdown{
+            display: block;
+        }
+    }
+
+
+    footer {
+        padding-left: 4vh;
+        .footer-content {
+            gap: 3vh;
+        }
+    }
+
+
+    //Home page
+    .home {
+
+        .home-content {
+            padding: 0 4vw;
+            flex-direction: column;
+    
+            li {
+                margin-bottom: 2vh;
+            }
+    
+            p {
+                line-height: 2.8vh;
+            }
+    
+            img {
+                height: 20vh;
+                border-radius: 5px;
+                margin-bottom: 4vh;
+            }
+        }
+    
+        .home-heading {
+            color: #175888;
+            font-size: x-large;
+            padding-bottom: 1vh;
+            border-bottom: 1px solid #c5c5c5;
+        }
+    }
+
+
+    //teams page
+    .teams{
+        h1{
+            margin: 5vh 0 ;
+        }
+        .m-teams{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0 8vw;
+
+            .team-item{
+                margin-bottom: 5vh;
+            }
+        }
+    }
+
+
+    //blogs page
+
+    .blogs{
+        .blogs-content{
+            margin-top: 10vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 6vh;
+        }
+    }
+
+    .blog-card{
+        height: 115vw;
+        min-width: 85vw;
+    }
+
+
+    //About us
+
+    .about{
+        h1{
+            margin: 3vh 0;
+        }
+    
+        p{
+            line-height: 3vh;
+            margin-bottom: 5vh;
+            padding: 0 6vw;
+        }
+    }
+
+
+
+    //Contact us page
+
+    .sec1{
+        h1{
+            margin: 4vh 0;
+        }
+
+        .m-branch{
+            display: flex;
+            flex-direction: column;
+
+            .m-branch-content{
+                margin: 0 4vh;
+                margin-bottom: 1vh;
+                h3{
+                    font-size: large;
+                }
+            }
+        }
+
+        .main-map{
+            width: 100%;
+        }
+
+        .form{
+            gap: 2vw;
+            width: 85vw;
+            padding: 5vh 0;
+            margin-bottom: 2vh;
+         }
+         form
+         {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3vw;
+            
+            input{
+            padding: 1vw 2vw;
+            border: 1px solid grey;
+            }
+            textarea{
+            padding: 1vh 2vw;
+            border: 1px solid grey;
+            }
+            button{
+                padding: 1vh 2vh;
+                border-radius: 5px;
+            }
+         }
     }
 }

@@ -5,6 +5,7 @@ import Blogs from "./routes/Blogs"
 import ContactUs from "./routes/ContactUs"
 import Services from "./routes/Services"
 import Teams from "./routes/Teams"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
     return (
