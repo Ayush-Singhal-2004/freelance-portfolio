@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 nav {
     height: 10vh;
     display: flex;
@@ -58,7 +62,7 @@ nav {
         }
 
         p {
-            line-height: 1.8vw;
+            line-height: 2vw;
         }
 
         img {
@@ -138,7 +142,7 @@ h3
    gap: 2vh;
    width: 25vw;
    margin-bottom: 5vh;
-   padding: 2vh;
+   padding: 2vw;
 }
 form
 {
@@ -148,6 +152,13 @@ form
     justify-content: center;
     gap: 2vh;
     
+    input{
+        padding: 1vh 1vw;
+    }
+    textarea{
+        resize: none;
+        padding: 1vh 1vw;
+    }
 }
 
 button
@@ -156,6 +167,24 @@ button
     color: white;
     padding: 1vh;
     cursor: pointer;
+}
+
+
+
+//About us page
+.about{
+
+    h1{
+        color: #175888;
+        text-align: center;
+    }
+
+    p{
+        line-height: 2vw;
+        margin-bottom: 2vw;
+        padding: 0 5vw;
+        text-align: center;
+    }
 }
  
 
