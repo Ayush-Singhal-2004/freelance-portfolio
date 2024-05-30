@@ -50,12 +50,30 @@ function NavigationBar({selected}) {
                 </div>
             <div className='nav-links'>
                 <a href="/">Home</a>
-                <a href="#" onClick={() => setIsServices(!isServices)}>
-                    Services
-                    {
-                        isServices ? <ServicesOptions /> : <></>
-                    }
-                </a>
+                
+                <Dropdown>
+                    <Dropdown.Toggle 
+                    variant="Secondary" 
+                    id="dropdown-basic" 
+                    style={{display:"flex", alignItems:"center", justifyContent:"center"}}
+                    >
+                        <a href="#">Services</a>
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                        <Dropdown.Item href="#">Income Tax</Dropdown.Item>
+                        <Dropdown.Item href="#">GST</Dropdown.Item>
+                        <Dropdown.Item href="#">Corporate Services</Dropdown.Item>
+                        <Dropdown.Item href="#">Audit</Dropdown.Item>
+                        <Dropdown.Item href="#">Coporate Finance</Dropdown.Item>
+                        <Dropdown.Item href="#">Services for Non-Residents</Dropdown.Item>
+                        <Dropdown.Item href="#">Accounting Services</Dropdown.Item>
+                        <Dropdown.Item href="#">Payroll</Dropdown.Item>
+                        <Dropdown.Item href="#">Benefits of Outsourcing</Dropdown.Item>
+                        <Dropdown.Item href="#">TDS</Dropdown.Item>
+                        <Dropdown.Item href="#">Coporate Governance</Dropdown.Item>
+                    </Dropdown.Menu>
+                </Dropdown>
+
                 <a href="/team">Team</a>
                 <a href="/blogs">Blogs</a>
                 <a href="/about">About us</a>
