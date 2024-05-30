@@ -36,31 +36,31 @@ function ContactUs() {
             message.length > 0
         ) {
             setLoader(true);
-            return
-            fetch("http://localhost:8001/user/contact", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({  
-                    name: name,
-                    from: email,
-                    subject: subject,
-                    message: message
-                })
-            })
-            .then((response) => {
-                return response.json();
-            })
-            .then((response) => {
-                setLoader(false);
-                if(response.status == 500) {
-                    alert("Some error occured!!");
-                }
-            })
-            .catch((err) => {
-                console.log(err);
-            })
+            return;
+            // fetch("http://localhost:8001/user/contact", {
+            //     method: "POST",
+            //     headers: {
+            //         "Content-Type": "application/json"
+            //     },
+            //     body: JSON.stringify({  
+            //         name: name,
+            //         from: email,
+            //         subject: subject,
+            //         message: message
+            //     })
+            // })
+            // .then((response) => {
+            //     return response.json();
+            // })
+            // .then((response) => {
+            //     setLoader(false);
+            //     if(response.status == 500) {
+            //         alert("Some error occured!!");
+            //     }
+            // })
+            // .catch((err) => {
+            //     console.log(err);
+            // })
         }
     }
 
